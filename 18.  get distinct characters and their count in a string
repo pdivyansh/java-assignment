@@ -1,0 +1,42 @@
+
+import java.util.*;
+
+public class MyClass {
+    public static void main(String args[]) {
+       Scanner sc=new Scanner(System.in);
+        String s=sc.next();
+        
+        int n=s.length();
+        char arr[]=new char[n];
+        for(int i=0;i<n;i++){
+            int count=0;
+            if(i==0){
+                for(int j=0;j<n;j++){
+                if(s.charAt(i)==s.charAt(j)){
+                    count++;
+                }
+            }
+            System.out.println(s.charAt(i)+" "+count);
+          }else{
+              boolean result=true;
+              for(int k=0;k<i;k++){
+                  if(s.charAt(i)==s.charAt(k)){
+                      result=false;
+                      break;
+                  }
+              }
+              if(result){
+                    for(int j=0;j<n;j++){
+                if(s.charAt(i)==s.charAt(j)){
+                    count++;
+                }
+            }
+            System.out.println(s.charAt(i)+" "+count);
+              }
+               
+          }
+            
+        }
+        
+    }
+}
