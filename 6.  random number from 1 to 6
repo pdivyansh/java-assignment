@@ -1,0 +1,17 @@
+
+import java.util.*;
+class HelloWorld {
+    public static void main(String[] args) {
+        
+   // random number from 1 to 6
+       
+        Random r=new Random();
+        int rand=r.nextInt(7);
+        if(rand==0){
+            rand=r.nextInt(7);
+        }
+        System.out.println(rand);
+        
+       
+    }
+}
