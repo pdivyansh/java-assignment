@@ -1,0 +1,30 @@
+
+import java.util.*;
+class Student{
+    private String name;
+    private String phone_no;
+    private String address ;
+    
+    public Student(String name,String phone_no,String address){
+        this.name=name;
+        this.phone_no=phone_no;
+        this.address=address;
+    }
+    public void print(){
+        System.out.println(name);
+        System.out.println(phone_no);
+        System.out.println(address);
+    }
+}
+class HelloWorld {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        Student s1=new Student("Ram","4587965589","sultanpur");
+        Student s2=new Student("shyam","7976765432","lucknow");
+        s1.print();
+        s2.print();
+        
+        
+       
+    }
+}
