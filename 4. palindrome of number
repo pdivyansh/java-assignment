@@ -1,0 +1,33 @@
+
+import java.util.*;
+class HelloWorld {
+    public static void main(String[] args) {
+        
+        // number is palindrome or not
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the number:");
+        int n=sc.nextInt();
+        int reverse=0;
+        int num=n;
+        int count=0;
+        int original=n;
+        while(num>0){
+            num=num/10;
+            count++;
+        }
+        int i=0;
+        while(n>0){
+            int rem=n%10;
+            reverse=reverse+rem*(int)Math.pow(10,count-i-1);
+            i++;
+            n=n/10;
+        }
+        if(original==reverse){
+          System.out.println("palindrome");  
+        }else{
+          System.out.println("not palindrome");
+        }
+        
+       
+    }
+}
