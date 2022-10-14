@@ -1,0 +1,40 @@
+
+
+import java.util.*;
+class Area{
+    private int a;
+    private int b;
+    private int c;
+    public Area(int a,int b,int c){
+        this.a=a;
+        this.b=b;
+        this.c=c;
+    }
+    
+    public void area() {
+        float s=(float)(a+b+c)/2;
+        float area=s*(s-a)*(s-b)*(s-c);
+        area=(float)Math.sqrt(area);
+        System.out.println("area " +area);
+        
+    }
+    
+    public void perimeter(){
+        System.out.println(a+b+c);
+    }
+}
+class HelloWorld {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the side a :");
+        int a=sc.nextInt();
+        System.out.println("Enter the side b :");
+        int b=sc.nextInt();
+        System.out.println("Enter the side c :");
+        int c=sc.nextInt();
+        Area ar =new Area(a,b,c);
+        ar.area();
+        
+       
+    }
+}
