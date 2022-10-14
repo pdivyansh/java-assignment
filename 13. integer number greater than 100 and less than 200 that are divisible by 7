@@ -1,0 +1,23 @@
+
+import java.util.*;
+class HelloWorld {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("integer number greater than 100 and less than 200 that are divisible by 7");
+        int sum=0;
+        for(int i=101;i<200;i++){
+            if(i%7==0){
+                System.out.print(i+" ");
+                sum=sum+i;
+            }
+        }
+        System.out.println("");
+        System.out.println("the sum of number is "+sum);
+        
+        
+        
+        
+        
+       
+    }
+}
