@@ -1,0 +1,17 @@
+
+import java.util.*;
+class HelloWorld {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the temperature in fahrenheit :");
+        float f=sc.nextFloat();
+        
+        double c=(f-32)/1.8;
+        System.out.println("temperature in celcius: "+c);
+        
+        
+        
+        
+       
+    }
+}
