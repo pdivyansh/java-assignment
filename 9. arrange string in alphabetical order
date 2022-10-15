@@ -1,0 +1,23 @@
+import java.util.*;
+
+class MyClass {
+    public static void main(String args[]) {
+    Scanner sc=new Scanner(System.in);
+    String s=sc.next();
+    int n=s.length();
+    char arr[]=new char[n];
+    
+    for(int i=0;i<n;i++){
+        arr[i]=s.charAt(i);
+    }
+    Arrays.sort(arr);
+    String str="";
+    for(int i=0;i<n;i++){
+       str=str+arr[i] ;
+    }
+    System.out.println(str);
+       
+    
+        
+    }
+}
