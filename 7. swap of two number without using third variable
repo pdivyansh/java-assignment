@@ -10,9 +10,9 @@ class HelloWorld {
         System.out.println("Enter the second number :");
         int b=sc.nextInt();
         
-        int c=a+b;
-        a=b;
-        b=c-a;
+        a=a+b;
+        b=a-b;
+        a=a-b;
         
         System.out.println("first number after swap :"+a);
         System.out.println("second number after swap :"+b);
