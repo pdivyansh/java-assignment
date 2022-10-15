@@ -1,0 +1,22 @@
+import java.util.*;
+class Morning{
+    public void morning(){
+       System.out.println("good morning");
+    }
+}
+class Evening extends Morning{
+    public void evening(){
+      System.out.println("good evening");
+    }
+}
+class MyClass {
+    public static void main(String args[]) {
+     Evening e=new Evening();
+     e.evening();
+     e.morning();
+     
+       
+    
+        
+    }
+}
